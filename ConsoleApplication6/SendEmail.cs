@@ -13,7 +13,7 @@ namespace SendEmailWIthPdfAttchment
     {
         public SendEmail(string recipient, string subject, string body, Attachment attachment)
         {
-            string sender = "";
+            string sender = "";//email address goes here
             SmtpClient smtpClient = new SmtpClient();
             var mailMessage = new MailMessage(sender, recipient)
             {
